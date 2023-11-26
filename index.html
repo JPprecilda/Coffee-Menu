@@ -7,15 +7,28 @@
         body{
             background-color: floralwhite;
             padding: 50px;
+
         }
         .container{
-            background-color: bisque;
+            background-color: #deb887;
             border: 1px solid;
             width: 500px;
             margin: auto;
         }
+        img{
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: 25px;
+        }
         hr{
             border-bottom: 2px solid brown;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        .bottom{
+            margin-top: 30px; 
         }
         .header{
             text-align: center;
@@ -33,19 +46,18 @@
             text-align: center;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 25px;
+            margin-bottom: 0;
         }
         .menu{
             line-height: 0.6;
+            text-align: left;
+            width: 40%;
         }
         .item p{
             display: inline-block;
-            font-size: 18px;
+            font-size: 14px;
             margin-left: 10px;
-            line-height: 0.1cm;
-        }
-        .menu{
-            text-align: left;
-            width: 40%;
+            line-height: 0.1px;
         }
         .price{
             text-align: right;
@@ -62,6 +74,12 @@
             padding-top: 10px;
             padding-bottom: 15px;
         }
+        a{
+            color: black;
+        }
+        a:hover{
+            color: blue;
+        }
     </style>
     <title>1. Personal WebPage</title>
 </head>
@@ -77,6 +95,7 @@
         <!-- COFFEE -->
         <section class="menu_coffee">
             <p class="title">Coffee</p>
+            <img src="drink.png" alt="Coffee">
             <article class="item">
                 <p class="menu">French Vanilla</p>
                 <p class="price">3.00</p>
@@ -101,6 +120,7 @@
         <!-- DESSERTS -->
         <section class="menu_desserts">
             <p class="title">Desserts</p>
+            <img src="cake.png" alt="Cake">
             <article class="item">
                 <p class="menu">Donut</p>
                 <p class="price">1.50</p>
@@ -118,10 +138,10 @@
                 <p class="price">2.50</p>
             </article>
         </section>
-        <hr>
+        <hr class="bottom">
         <!-- FOOTER -->
         <section class="footer">
-            <p class="website">Visit our website</p>
+            <p><a href="google.com" target="_blank">Visit our website</a></p>
             <p class="address">123 Free Code Camp Drive</p>
         </section>
 
